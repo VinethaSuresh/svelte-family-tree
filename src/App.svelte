@@ -31,10 +31,8 @@
   </script>
 </svelte:head>
 <main style="height:100%">
-  <div style="height:10%">
-    <TitleBar />
-  </div>
+  
   <div style="height:89%">
-    <Display />
+    <Display/>
   </div>
 </main>

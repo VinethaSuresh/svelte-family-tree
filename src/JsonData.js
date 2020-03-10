@@ -1,192 +1,250 @@
-let Ram = {
-    "name": "Ram",
+let queenElizabetham = {
+    "name": "Queen Elizabeth",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/sb0KLnZ/eli.jpg"
 
 }
 
-let Uma = {
-    "name": "Uma",
+let charles = {
+    "name": "Charles",
     "id": 2,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/HYmR82F/ele-Child1.jpg"
 
 }
 
-let Padamaja = {
-    "name": "Padamaja",
+let anne = {
+    "name": "Anne",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/Sdw7ZVC/anne.jpg"
 
 }
 
-let Kumar = {
-    "name": "Kumar",
+let andrew = {
+    "name": "Andrew",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/4SS5yYG/eli-Child3.jpg"
 
 }
 
-let Jaya = {
-    "name": "Jaya",
+let edward = {
+    "name": "Edward",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/D42CnK2/eli-Child4.jpg"
 
 }
 
-let Radhika = {
-    "name": "Radhika",
+let willam = {
+    "name": "William",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/j6bS2tR/ele-Char-Child1.jpg"
 
 }
 
-let Praveen = {
-    "name": "Praveen",
+let harry = {
+    "name": "Harry",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/qBt7Q7D/ele-Char-Child2.jpg"
 
 }
 
-let Monika = {
-    "name": "Monika",
+let beatRice = {
+    "name": "BeatRice",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/6RPqYrY/eli-And-Child1.jpg"
 
 }
 
-let Teju = {
-    "name": "Teju",
+let eugenie= {
+    "name": "Eugenie",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/5ssbNZx/engenie.jpg"
+    
 
 }
 
-let Rajesh = {
-    "name": "Rajesh",
+let louise = {
+    "name": "Louise",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/QvXnsRv/ele-Edw-Child1.jpg"
 
 }
 
-let Vinetha = {
-    "name": "Vinetha",
+let george = {
+    "name": "George",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/bFQ4sS7/ele-Will-Child1.jpg" 
 
 }
 
-let Thulasi = {
-    "name": "Thulasi",
+let charlotte = {
+    "name": "Charlotte",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/ygzNBz3/ele-Will-Child2.jpg"  
+
 
 }
 
-let Sai = {
-    "name": "Sai",
+let louis = {
+    "name": "Louis",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/2WjMC1y/ele-Will-Child3.jpg" 
+
 
 }
-let Babbi = {
-    "name": "Babbi",
+let archie = {
+    "name": "Archie",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/6FNBsLb/ele-Harry-Child1.jpg" 
+
 
 }
 
-let Chinni = {
-    "name": "Chinni",
+let savannah = {
+    "name": "Savannah",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/Ln2NqPB/ele-Peter-Child1.jpg" 
+
 
 }
 
-let Janani = {
-    "name": "Janani",
+let isla = {
+    "name": "Isla",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/1LJb8SW/ele-Peter-Child2.png" 
 
 }
 
-let Abi = {
-    "name": "Abi",
+let miaGrace = {
+    "name": "MiaGrace",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/1n7zNFV/elezara-Child1.jpg"
+    
 
 }
 
-let Keerthi = {
-    "name": "kerthi",
+let lenaElizabeth = {
+    "name": "LnaElizabeth",
     "id": 1,
     "children": [],
-    "parent": null
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/hBbHk17/ele-Zara-Child2.jpg" 
+}
+let peter = {
+    "name": "Peter",
+    "id": 2,
+    "children": [],
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/7KtSGr3/ele-Anne-Child1.jpg" 
 
 }
-// Ram children
-Ram.parent=Ram;
- Uma.parent=Ram;
- Ram.children.push(Uma);
- Padamaja.parent=Ram;
- Ram.children.push(Padamaja);
- Kumar.parent=Ram;
- Ram.children.push(Kumar);
- Jaya.parent=Ram;
- Ram.children.push(Jaya);
- Radhika.parent=Ram;
- Ram.children.push(Radhika);
+let zaraTindall = {
+    "name": "ZaraTindall",
+    "id": 2,
+    "children": [],
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/mB3NndM/zara.jpg"  
+
+}
+let james = {
+    "name": "James",
+    "id": 2,
+    "children": [],
+    "parent": null,
+    "imageSrc":"https://i.ibb.co/NVKnbyg/ele-Edw-Child2.jpg"
+
+}
+// queenElizabetham children
+queenElizabetham.parent=queenElizabetham;
+ charles.parent=queenElizabetham;
+ queenElizabetham.children.push(charles);
+ anne.parent=queenElizabetham;
+ queenElizabetham.children.push(anne);
+ andrew.parent=queenElizabetham;
+ queenElizabetham.children.push(andrew);
+ edward.parent=queenElizabetham;
+ queenElizabetham.children.push(edward);
  
-// uma children
- Monika.parent=Uma;
- Uma.children.push(Monika);
- Praveen.parent=Ram;
- Uma.children.push(Praveen);
- Teju.parent=Monika;
- Monika.children.push(Teju);
+// charles children
+ willam.parent=charles;
+ charles.children.push(willam);
+ harry.parent=charles;
+ charles.children.push(harry);
 
- // Padamaja children
- Rajesh.parent=Padamaja;
- Padamaja.children.push(Rajesh);
- Vinetha.parent=Padamaja;
- Padamaja.children.push(Vinetha);
- Thulasi.parent=Padamaja;
- Padamaja.children.push(Thulasi);
-
-
- // Kumar children
- Sai.parent=Kumar;
- Kumar.children.push(Sai);
+ // anne children
+ peter.parent=anne;
+ anne.children.push(peter);
+ zaraTindall.parent=anne;
+ anne.children.push(zaraTindall);
+ 
+ // andrew children
+ beatRice.parent=andrew;
+ andrew.children.push(beatRice);
+ eugenie.parent=andrew;
+ andrew.children.push(eugenie);
 
 
- // Jaya children
- Babbi.parent=Jaya;
- Jaya.children.push(Babbi);
- Chinni.parent=Jaya;
- Jaya.children.push(Chinni);
+ // edward children
+ louise.parent=edward;
+ edward.children.push(louise);
+ james.parent=edward;
+ edward.children.push(james);
 
  // Radhika children
- Janani.parent=Radhika;
- Radhika.children.push(Janani);
- Abi.parent=Radhika;
- Radhika.children.push(Abi);
- Keerthi.parent=Radhika;
- Radhika.children.push(Keerthi);
+ george.parent=willam;
+ willam.children.push(george);
+ charlotte.parent=willam;
+ willam.children.push(charlotte);
+ louis.parent=willam;
+ willam.children.push(louis);
 
-export default Ram;
+  // harry children
+  archie.parent=harry;
+  harry.children.push(archie);
+
+ // peter children
+ savannah.parent=peter;
+ peter.children.push(savannah);
+ isla.parent=peter;
+ peter.children.push(isla);
+
+ // zara children
+ miaGrace.parent=zaraTindall;
+ zaraTindall.children.push(miaGrace);
+ lenaElizabeth.parent=zaraTindall;
+ zaraTindall.children.push(lenaElizabeth);
+
+export default queenElizabetham;

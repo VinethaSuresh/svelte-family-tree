@@ -1,87 +1,76 @@
 <script>
   import ListItem from "./ListItem.svelte";
-  import SideTree from "./SideTree.svelte";
-  import TitleBar from './TitleBar.svelte';
-  import root from "./JsonData.js";
-  let currentDirectory = root;
-  function displayChildren(child) {
-    currentDirectory = child;
-    console.log("currentDirectory",currentDirectory);
-
-  }
-  function clickHandler() {
-    currentDirectory = currentDirectory.parent;
-  }
+  export let currentDirectory;
+  export let displayChildren;
+  export let clickHandler;
 </script>
-<div style="height:10%">
-    <TitleBar {root}{displayChildren} />
-  </div>
-<link rel="stylesheet" type="text/css" href="./Display.css" />
-<div class="display-container">
-  <div class="sidetree-container">
-    <!-- <SideTree {root} {displayChildren} /> -->
-  </div>
-  <div class="parent-children-container">
+
+<div class=" display-container" class:container-height={currentDirectory.children.length==0}>
   <div class="parent-container">
     <ListItem member={currentDirectory} {displayChildren} />
     <button type="button" on:click={clickHandler}>Back To Parent</button>
-  </div>
+    </div>
   <div class="children-container">
-      <div class="OffSpringClass">OffSpring</div>
-    <div class="childrenStyle">
+   {#if currentDirectory.children.length>0}
+    <div class="OffSpringClass">OFFSPRING</div>
+    {/if}
       {#each currentDirectory.children as member}
         <ListItem {member} {displayChildren} />
       {/each}
-    </div>
+    
   </div>
-</div>
-</div>
-
+  </div>
 <style>
-  /* .childrenStyle {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-   
-  }
-  .colorContainer {
-    background-color: #f7e0d4;
-   
-  }
-  .parent-container{
-    
-    background-color: #fc600a;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width:70%;
-    display:inline-block;
-  }
 
-  button {
-     color: #092834;
-    font-size: 20px;
-    background-color: #f7e0d4;
-    text-align: center;
-    
-  }
-  .OffSpringContainer {
-    text-align: center;
-    text-align: center;
+.display-container
+{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height:35em;
+  width:100%;
+
+}
+
+.container-height
+{
+  height:15em;
+}
+.OffSpringClass
+{
+  font-size:40px;
+  font-weight:50px;
+  font-family: Verdana, sans-serif;
+  color:darkgreen;
+  height:2.5em;
+  margin-left:8em;
+  padding-top:0.5em;
+  width:100%;
+  
+}
  
-  }
-  .OffSpringClass {
-    font-weight: 50px;
-    line-height: 30px;
-    font-size: 30px;
-    color: #092834;
-  } */
-  .sidetree-container {
-    display: inline-block;
-    width:30%;
-  }
-  .display-container {
-    display: inline;
-  }
+ button
+ {
+  width:15vw;
+  height:10vh;
+  background-color:darkgreen;
+  color:white;
+  font-size:20px;
+  font-weight:5px; 
+  align-self:center;
+  margin-left:22em;
+  
+ }
+ 
+ .parent-container
+ {
+   text-align:center;
+   display:flex;
+   justify-content:flex-start;
+   height:10em;
+ 
+
+ }
+ 
+ 
 </style>

@@ -2,18 +2,18 @@
   export let member;
   import Display from "./Display.svelte";
   export let displayChildren;
+
   function showChildren() {
     displayChildren(member);
+    
   }
 </script>
-  <link rel="stylesheet" type="text/css" href="./ListItem.css" />
-
 <div class=" containerClass card" on:click={showChildren}>
   <div class=" card-body-class card-body">
     <img
-      src="imagesun.jpg"
+      src={member.imageSrc}
       class=" cardTitleClass card-title"
-      alt="Card image" />
+      alt={member.name} />
     <p class=" cardFooterClass card-footer">{member.name}</p>
   </div>
 </div>
@@ -38,9 +38,8 @@
     color: white;
     text-align: center;
     padding-top: 8px;
-    background-color: #1489b8;
+    background-color:darkgreen;
     font-size: 20px;
-
     font-weight: 20px;
   }
 

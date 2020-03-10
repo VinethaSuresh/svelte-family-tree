@@ -22,6 +22,8 @@ function toggleVisible()
 </div>
 
 <style>
+    
+  
     .bold-text
     {
         font-weight: bold;
@@ -30,5 +32,5 @@ function toggleVisible()
     {
         margin-left:1em;
     }
-  
+   
 </style>
